@@ -2,6 +2,7 @@ package contrller;
 
 import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jmx.export.annotation.ManagedResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -27,7 +28,7 @@ public class UserController {
 
 
     //返回jsp视图展示
-    @RequestMapping(value = "/getUserModel", method = RequestMethod.GET)
+    @RequestMapping(value = "/addUser", method = RequestMethod.GET)
     public ModelAndView getUser() {
 
         ModelAndView modelAndView = new ModelAndView();
@@ -47,8 +48,24 @@ public class UserController {
 
     }
 
-    @RequestMapping(value="test")
-    public void testController(User user){
-        System.out.println(user.toString());
+    @RequestMapping(value="/queryUser")
+    public void testController(){
+        User user = userService.queryUser(1);
+        System.out.println(user);
+
+    }
+
+    @RequestMapping(value = "/updateUser")
+    public void updateController(){
+        User user = new User();
+        user.setId(1);
+        user.setUsername("liuwei");
+        user.setPasswd("321");
+        userService.updateUser(user);
+    }
+
+    @RequestMapping(value = "/deleteUser")
+    public void deleteController(){
+         userService.deleteUser(1);
     }
 }

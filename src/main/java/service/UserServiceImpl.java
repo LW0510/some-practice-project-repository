@@ -2,8 +2,6 @@ package service;
 
 import entity.User;
 import mapper.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -34,8 +32,19 @@ public class UserServiceImpl implements UserService {
         //if(该学生存在)
         userDao.addUser(user);
 
+    }
 
+    @Override
+    public User queryUser(int i) {
+        return userDao.getUser(i);
+    }
 
+    @Override
+    public void deleteUser(int id){ userDao.deleteUser(id);}
+
+    @Override
+    public void updateUser(User user){
+        userDao.updateUser(user);
     }
 
 

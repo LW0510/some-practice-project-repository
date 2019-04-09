@@ -1,9 +1,6 @@
 package mapper;
 
 import entity.User;
-import org.apache.ibatis.session.SqlSession;
-import org.mybatis.spring.support.SqlSessionDaoSupport;
-import org.springframework.stereotype.Repository;
 
 
 /**
@@ -12,8 +9,12 @@ import org.springframework.stereotype.Repository;
  * @description TODO
  * @date 2019/04/06 下午 4:55
  */
-public interface UserMapper{
+public interface UserMapper {
     void addUser(User user);
+
     User getUser(int id);
 
+    void deleteUser(int id);
+
+    void updateUser(User user);
 }
