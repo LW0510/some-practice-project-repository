@@ -6,27 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="574902c6-14f3-409b-9f63-e945c9ccc1e9" name="Default Changelist" comment="">
+    <list default="true" id="574902c6-14f3-409b-9f63-e945c9ccc1e9" name="Default Changelist" comment="新增了些mybatis的curd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/contrller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/contrller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/serviceI/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/serviceI/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/firsthtml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/classes/generatorConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/classes/mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/views/getUser.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test_mybaties/login.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +17,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/firsthtml.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,6 +82,7 @@
         <option value="$PROJECT_DIR$/src/main/java/contrller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/firsthtml.html" />
       </list>
     </option>
   </component>
@@ -216,14 +208,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="some-practice-project-repository" type="b2602c69:ProjectViewProjectNode" />
-              <item name="some-practice-project-repository" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -239,7 +223,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15368421" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -443,11 +427,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554785904500</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增了些mybatis的curd">
+      <created>1554804944397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554804944397</updated>
+    </task>
+    <task id="LOCAL-00004" summary="新增了firsthtml">
+      <created>1554807721357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554807721357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77713000" />
+    <option name="totallyTimeSpent" value="80607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,6 +458,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.69379014" visible="true" weight="0.17091152" />
       <window_info id="Persistence" order="1" sideWeight="0.30620986" side_tool="true" weight="0.22907725" />
@@ -469,7 +468,7 @@
       <window_info id="Web" order="5" sideWeight="0.300905" side_tool="true" weight="0.2194206" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" visible="true" weight="0.33144477" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" visible="true" weight="0.30878186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4115983" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -477,7 +476,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5020107" side_tool="true" weight="0.688826" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.18953323" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32719547" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.54815865" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3427762" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32918552" />
       <window_info anchor="bottom" id="Database Console" order="12" sideWeight="0.49785408" weight="0.32352942" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.3385269" />
@@ -494,9 +493,9 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.3299356" />
       <window_info anchor="right" id="Database" order="6" weight="0.18133047" />
-      <window_info anchor="right" id="Structure" order="7" sideWeight="0.7754237" side_tool="true" visible="true" weight="0.22050938" />
+      <window_info anchor="right" id="Structure" order="7" sideWeight="0.77663934" side_tool="true" visible="true" weight="0.22050938" />
       <window_info anchor="right" id="CDI" order="8" weight="0.3299356" />
-      <window_info anchor="right" id="Maven" order="9" sideWeight="0.22457626" visible="true" weight="0.22050938" />
+      <window_info anchor="right" id="Maven" order="9" sideWeight="0.22336066" visible="true" weight="0.22050938" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,16 +505,11 @@
     <MESSAGE value="my test_mybaties project" />
     <MESSAGE value="删除了些html文件" />
     <MESSAGE value="添加了一个firsthtml文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了一个firsthtml文件" />
+    <MESSAGE value="新增了些mybatis的curd" />
+    <MESSAGE value="新增了firsthtml" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增了firsthtml" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -859,6 +853,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/firsthtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -919,7 +920,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
