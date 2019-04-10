@@ -2,6 +2,8 @@ package mapper;
 
 import entity.User;
 
+import java.util.List;
+
 
 /**
  * @author lw
@@ -17,4 +19,12 @@ public interface UserMapper {
     void deleteUser(int id);
 
     void updateUser(User user);
+
+    List<User> getAllUsers();
+
+    List<User> getUserByUsername(String username);
+
+    User getUserAndClass(int userid);
+
+
 }

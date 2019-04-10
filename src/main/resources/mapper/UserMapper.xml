@@ -19,6 +19,28 @@
         update t_user set username=#{username},passwd=#{passwd} where id=#{id}
     </update>
 
+    <select id="getAllUsers" resultType="entity.User">
+        select * from t_user
+    </select>
+
+    <select id="getUserByUsername" parameterType="String" resultType="entity.User">
+        select * from t_user where username like #{username}%
+    </select>
+
+
+    <select id="getUserAndClass" parameterType="int" resultMap="classResultMap">
+        select * from t_user u ,t_class c where u.cid=c.id and u.id=#{id}
+    </select>
+    <resultMap id="classResultMap" type="entity.User">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="passwd" column="passwd"/>
+        <association property="class_" column="cid" javaType="entity.Class_">
+            <id property="id" column="id"/>
+            <result property="classname" column="classname"/>
+            <result property="describe" column="describe"/>
+        </association>
+    </resultMap>
     <!--<resultMap id="BaseResultMap" type="entity.User">-->
     <!--<result column="id" jdbcType="INTEGER" property="id" />-->
     <!--<result column="username" jdbcType="VARCHAR" property="username" />-->

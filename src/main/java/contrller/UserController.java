@@ -1,5 +1,6 @@
 package contrller;
 
+import entity.Class_;
 import entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jmx.export.annotation.ManagedResource;
@@ -67,5 +68,43 @@ public class UserController {
     @RequestMapping(value = "/deleteUser")
     public void deleteController(){
          userService.deleteUser(1);
+    }
+
+    @RequestMapping(value = "/getAllUsers")
+    public void getAllUsers(){
+        List<User> list = userService.getAllUsers();
+        System.out.println("User集合为：");
+        for(User user : list){
+            System.out.println(user);
+
+        }
+
+    }
+
+
+    @RequestMapping(value = "/getUserByUsername")
+    public void getUserByUsername(){
+        List<User> list = userService.getUserByUsername("%z%");
+        System.out.println("模糊查询User集合为：");
+        for(User user : list){
+            System.out.println(user);
+        }
+    }
+
+
+    @RequestMapping(value = "/getUserAndClass")
+    public void getUserAndClass(){
+        User user = userService.getUserAndClass(1);
+        System.out.println(user);
+    }
+
+    @RequestMapping(value = "/getUserByCid")
+    public void getUserByCid(){
+        List<Class_> classs = userService.getUserByCid(1);
+        for(Class_ cl : classs){
+            System.out.println(cl);
+
+        }
+
     }
 }

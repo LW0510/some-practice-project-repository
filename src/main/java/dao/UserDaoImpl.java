@@ -9,6 +9,8 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository( "userDao")
 public class UserDaoImpl extends SqlSessionDaoSupport implements UserMapper {
 
@@ -55,6 +57,31 @@ public class UserDaoImpl extends SqlSessionDaoSupport implements UserMapper {
         UserMapper userDao = session.getMapper(UserMapper.class);
         userDao.updateUser(user);
     }
+
+    @Override
+    public List<User> getAllUsers() {
+        SqlSession session = super.getSqlSession();
+        UserMapper userDao = session.getMapper(UserMapper.class);
+        return userDao.getAllUsers();
+
+    }
+
+    @Override
+    public List<User> getUserByUsername(String username) {
+        SqlSession session = super.getSqlSession();
+        UserMapper userDao = session.getMapper(UserMapper.class);
+        return userDao.getUserByUsername(username);
+    }
+
+    @Override
+    public User getUserAndClass(int userid){
+        SqlSession session = super.getSqlSession();
+        UserMapper userDao = session.getMapper(UserMapper.class);
+        return userDao.getUserAndClass(userid);
+
+    }
+
+
 
 
 }

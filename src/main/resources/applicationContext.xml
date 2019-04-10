@@ -67,7 +67,7 @@
         <!-- Mybatis自身的配置文件,一般用来声明别名 -->
         <property name="configLocation" value="classpath:mybatis.xml"/>
         <!-- mybatis的映射文件 -->
-        <property name="mapperLocations" value="classpath*:mapper/UserMapper.xml"/>
+        <property name="mapperLocations" value="classpath*:mapper/ClassMapper.xml"/>
         <!-- 要映射类的包路径，如果使用了这种方式，则configLocation中不必再进行声明 它一般对应我们的实体类所在的包，
         这个时候会自动取对应包中不包括包名的简单类名作为包括包名的别名。多个package之间可以用逗号或者分号等来进行分隔 -->
         <!--<property name="typeAliasesPackage" value="com.xzc.xuexi.entity" />-->

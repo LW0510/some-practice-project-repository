@@ -7,6 +7,8 @@ public class User {
 
     private String passwd;
 
+    private Class_ class_;
+
     public Integer getId() {
         return id;
     }
@@ -23,11 +25,28 @@ public class User {
         this.username = username == null ? null : username.trim();
     }
 
+    public Class_ getClass_() {
+        return class_;
+    }
+
+    public void setClass_(Class_ class_) {
+        this.class_ = class_;
+    }
+
     public String getPasswd() {
         return passwd;
     }
 
     public void setPasswd(String passwd) {
-        this.passwd = passwd == null ? null : passwd.trim();
+        this.passwd = passwd;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", class_=" + class_ +
+                '}';
     }
 }
